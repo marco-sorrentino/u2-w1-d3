@@ -1,5 +1,5 @@
 body {
-  height: 100vh;
+  font-family: "Manrope", sans-serif;
 }
 
 /* PRODUCT CARD */
@@ -22,7 +22,7 @@ body {
 .text {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 20px;
+  align-items: center;
 }
 
 .button {
@@ -33,4 +33,35 @@ body {
 
 button {
   border: none;
+  padding: 10px 50px;
+  border-radius: 20px;
+  background-color: #f3df85;
+  color: #612407;
+  font-size: 1rem;
+}
+
+.cardBody {
+  padding: 20px 0;
+  color: #612407;
+}
+
+.left p:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.left p:last-child {
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right p {
+  font-size: 1.2rem;
 }
