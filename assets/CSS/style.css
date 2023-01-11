@@ -65,3 +65,78 @@ button {
 .right p {
   font-size: 1.2rem;
 }
+
+/* NAV */
+
+nav {
+  width: 50rem;
+  background: #faf7e3;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.menu {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #f3df85;
+  color: #612407;
+  font-size: 0.8rem;
+}
+
+.main {
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 20px 50px;
+  font-weight: bold;
+}
+
+#logo {
+  width: 3rem;
+}
+
+/* CARD ARTICLE */
+
+.cardArticle {
+  background: #faf7e3;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  color: #612407;
+}
+
+.rightText {
+  margin-left: 20px;
+}
+
+.rightText p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .cardArticle {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .rightText {
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+
+  #logoHoney {
+    max-width: 100%;
+  }
+}
