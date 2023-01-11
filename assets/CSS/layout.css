@@ -4,6 +4,31 @@ body {
 
 /* PRODUCT CARD */
 
+.mobile {
+  background-color: #f3df85;
+  color: rgb(71, 71, 71);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.mobile:hover {
+  background-color: black;
+  color: white;
+}
+
+span {
+  display: none;
+}
+
+h1 {
+  font-weight: bold;
+  color: #612407;
+  font-size: 1.5rem;
+  padding: 30px;
+}
+
 .card {
   width: 20rem;
   background: #faf7e3;
@@ -12,11 +37,11 @@ body {
 }
 
 #honey {
-  max-width: 100%;
   border-top-left-radius: 75px;
   border-top-right-radius: 75px;
   height: 50vh;
   object-fit: cover;
+  max-width: 100%;
 }
 
 .text {
@@ -68,36 +93,6 @@ button {
 
 /* NAV */
 
-nav {
-  width: 50rem;
-  background: #faf7e3;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 20px;
-  border-radius: 50px;
-}
-
-.menu {
-  border: none;
-  padding: 10px 30px;
-  border-radius: 20px;
-  background-color: #f3df85;
-  color: #612407;
-  font-size: 0.8rem;
-}
-
-.main {
-  border-radius: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.2rem;
-  padding: 20px 50px;
-  font-weight: bold;
-}
-
 #logo {
   width: 3rem;
 }
@@ -120,11 +115,69 @@ nav {
   line-height: 1.5;
 }
 
+.articleTitle h2 {
+  font-weight: bold;
+  color: #612407;
+  font-size: 1.7rem;
+  padding: 30px;
+}
+
+.cardArticle {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.rightText {
+  margin-left: 0px;
+  margin-bottom: 30px;
+}
+
+#logoHoney {
+  max-width: 100%;
+}
+
+.rightText h3 {
+  font-weight: bold;
+  color: #612407;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
 @media (min-width: 576px) {
+  span {
+    display: block;
+  }
+
   nav {
-    border-radius: 0;
-    width: 100%;
-    padding: 20px 0;
+    width: 100%s;
+    background: #faf7e3;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .menu {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #f3df85;
+    color: #612407;
+    font-size: 0.8rem;
+  }
+
+  .main {
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 20px 50px;
+    font-weight: bold;
+  }
+
+  #logo {
+    width: 3rem;
   }
 
   h1 {
@@ -158,7 +211,7 @@ nav {
     padding: 30px;
   }
 
-  article h2 {
+  .articleTitle h2 {
     font-weight: bold;
     color: #612407;
     font-size: 1.7rem;
@@ -182,5 +235,88 @@ nav {
 
   #logoHoney {
     max-width: 100%;
+  }
+
+  #honey {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hide {
+    visibility: visible;
+  }
+
+  nav {
+    width: 100%s;
+    background: #faf7e3;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .menu {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #f3df85;
+    color: #612407;
+    font-size: 0.8rem;
+  }
+
+  .main {
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 20px 50px;
+    font-weight: bold;
+  }
+
+  #logo {
+    width: 3rem;
+  }
+
+  h1 {
+    font-weight: bold;
+    color: #612407;
+    font-size: 2rem;
+    padding: 30px;
+  }
+
+  .cardBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .card {
+    margin: 20px 0;
+    width: 17rem;
+  }
+
+  .rightText {
+    margin-left: 20px;
+    width: 50%;
+  }
+
+  .rightText p {
+    line-height: 1.5;
+  }
+
+  .cardArticle {
+    flex-direction: row;
+  }
+
+  #logoHoney {
+    max-width: 100%;
+  }
+
+  #honey {
+    width: 100%;
   }
 }
