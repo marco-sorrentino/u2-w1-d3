@@ -242,6 +242,106 @@ button {
   }
 }
 
+@media (min-width: 768px) {
+  span {
+    display: block;
+  }
+
+  nav {
+    width: 100%s;
+    background: #faf7e3;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .menu {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #f3df85;
+    color: #612407;
+    font-size: 0.6rem;
+  }
+
+  .main {
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 20px 50px;
+    font-weight: bold;
+  }
+
+  #logo {
+    width: 3rem;
+  }
+
+  h1 {
+    font-weight: bold;
+    color: #612407;
+    font-size: 2rem;
+    padding: 30px;
+  }
+
+  .cardBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .card {
+    margin: 20px 0;
+    width: 19rem;
+  }
+
+  #honey {
+    max-width: 100%;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  article {
+    padding: 30px;
+  }
+
+  .articleTitle h2 {
+    font-weight: bold;
+    color: #612407;
+    font-size: 1.7rem;
+    padding: 30px;
+  }
+
+  .cardArticle {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .rightText {
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+
+  .rightText h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  #logoHoney {
+    max-width: 100%;
+  }
+
+  #honey {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1200px) {
   .hide {
     visibility: visible;
@@ -254,7 +354,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
+    padding: 20px 180px;
   }
 
   .menu {
