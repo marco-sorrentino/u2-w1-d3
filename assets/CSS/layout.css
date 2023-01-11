@@ -1,0 +1,186 @@
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+/* PRODUCT CARD */
+
+.card {
+  width: 20rem;
+  background: #faf7e3;
+  border-radius: 75px;
+  margin: 80px auto;
+}
+
+#honey {
+  max-width: 100%;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  padding: 10px 50px;
+  border-radius: 20px;
+  background-color: #f3df85;
+  color: #612407;
+  font-size: 1rem;
+}
+
+.cardBody {
+  padding: 20px 0;
+  color: #612407;
+}
+
+.left p:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.left p:last-child {
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right p {
+  font-size: 1.2rem;
+}
+
+/* NAV */
+
+nav {
+  width: 50rem;
+  background: #faf7e3;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.menu {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #f3df85;
+  color: #612407;
+  font-size: 0.8rem;
+}
+
+.main {
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 20px 50px;
+  font-weight: bold;
+}
+
+#logo {
+  width: 3rem;
+}
+
+/* CARD ARTICLE */
+
+.cardArticle {
+  background: #faf7e3;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  color: #612407;
+}
+
+.rightText {
+  margin-left: 20px;
+}
+
+.rightText p {
+  line-height: 1.5;
+}
+
+@media (min-width: 576px) {
+  nav {
+    border-radius: 0;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  h1 {
+    font-weight: bold;
+    color: #612407;
+    font-size: 2rem;
+    padding: 30px;
+  }
+
+  .cardBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .card {
+    margin: 20px 0;
+    width: 19rem;
+  }
+
+  #honey {
+    max-width: 100%;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  article {
+    padding: 30px;
+  }
+
+  article h2 {
+    font-weight: bold;
+    color: #612407;
+    font-size: 1.7rem;
+    padding: 30px;
+  }
+
+  .cardArticle {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .rightText {
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+
+  .rightText h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  #logoHoney {
+    max-width: 100%;
+  }
+}
